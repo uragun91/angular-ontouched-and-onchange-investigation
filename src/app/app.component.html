@@ -1,0 +1,26 @@
+<table>
+  <thead>
+    <tr>
+      <th>Изменение по change</th>
+      <th>Изменение по blur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <app-custom-input [formControl]="control1"></app-custom-input>
+      </td>
+      <td>
+        <app-custom-input [formControl]="control2"></app-custom-input>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div *ngFor="let value of changeValues">{{ value }}</div>
+      </td>
+      <td>
+        <div *ngFor="let value of blurValues">{{ value }}</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
