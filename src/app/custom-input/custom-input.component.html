@@ -1,0 +1,7 @@
+<label>
+  <span>Введите что-нибудь</span>
+  <input [(ngModel)]="value" (input)="onInput()"/>
+</label>
+<div>
+	<button (click)="onTouched()">Нажатие на кнопку вызывает кастомное событие blur</button>
+</div>
